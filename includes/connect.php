@@ -1,8 +1,8 @@
 <?php
 
-$con = mysqli_connect("localhost","root","","mystore");
+$conn = mysqli_connect("localhost", "root", "", "jewellery_shop");
 
-if(!$con){
-    die("Connection Failed");
+if (!$conn) {
+    die("Database Connection Failed: " . mysqli_connect_error());
 }
 ?>
